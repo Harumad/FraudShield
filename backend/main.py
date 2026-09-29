@@ -73,8 +73,8 @@ def get_openai_client() -> OpenAI:
         api_key=api_key, 
         base_url=base_url,
         default_headers={
-            "HTTP-Referer": "http://localhost:3000", # Can be any local placeholder url
-            "X-Title": "FinBot Chatbox",
+            "HTTP-Referer": os.getenv("OPENAI_SITE_URL", "http://localhost:3000"),
+            "X-Title": os.getenv("OPENAI_APP_TITLE", "FraudShield AI"),
         }
     )
 
