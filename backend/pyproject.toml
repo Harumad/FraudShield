@@ -1,0 +1,15 @@
+[project]
+name = "fraudshield-api"
+version = "0.1.0"
+description = "FraudShield AI backend API"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.136.3",
+    "openai>=1.0.0",
+    "python-dotenv>=1.0.0",
+    "rich>=13.0.0",
+    "uvicorn>=0.48.0",
+]
+
+[tool.vercel]
+entrypoint = "api:app"

@@ -1,0 +1,22 @@
+# Keep the build context small: these are large and/or machine-specific.
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.git/
+.github/
+node_modules/
+frontend/node_modules/
+frontend/dist/
+backend/static/
+.env
+.env.*
+!.env.example
+chroma_db/
+finance_rag_chunks_*.json
+finance_rag_clean.csv
+tests/
+*.md
+Procfile
+vercel.json

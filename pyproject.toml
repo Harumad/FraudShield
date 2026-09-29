@@ -1,0 +1,14 @@
+[project]
+name = "chatbox4"
+version = "0.1.0"
+description = "FinBot - A CLI financial assistant chatbot"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "chromadb>=1.5.9",
+    "fastapi>=0.136.3",
+    "openai>=1.0.0",
+    "python-dotenv>=1.0.0",
+    "rich>=13.0.0",
+    "uvicorn>=0.48.0",
+]
